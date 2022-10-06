@@ -1,15 +1,14 @@
-import styles from "../styles/Home.module.css";
+import React from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
-export default function Home(props) {
+export default function About(props) {
   const { t } = useTranslation();
-
   return (
-    <div className={styles.container}>
-      <h1>Homepage</h1>
+    <>
+      <h1>About page</h1>
       <p>{t("home:welcome_msg")}</p>
-    </div>
+    </>
   );
 }
 
