@@ -64,7 +64,7 @@ export default function Home(props) {
                     <p className={styles.tag}>JS</p>
                     <p className={styles.tag}>HTML / CSS</p>
                 </div>
-                <h3>Darbų registravimo sistema</h3>
+                <h3>Darbų registravimo sistema.</h3>
                 <p className={styles.portfolioShortDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
                 <div className={styles.portfolioMore}>
                     <p >Plačiau...</p>

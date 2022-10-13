@@ -7,7 +7,6 @@ import LiveImg from "../img/svg/live.svg";
 
 export default function PortfilioPage(props) {
   const router = useRouter();
-
   return (
     <>
       <section className={styles["project-container"]}>
