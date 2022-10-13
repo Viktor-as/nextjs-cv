@@ -3,6 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import webDevImg from "../img/web-dev.jpg";
+import portfolio8 from "../img/portfolio/portfolio8.jpg";
 import portfolio7 from "../img/portfolio/portfolio7.jpg";
 import portfolio6 from "../img/portfolio/portfolio6.jpg";
 import portfolio5 from "../img/portfolio/portfolio5.jpg";
@@ -54,6 +55,14 @@ export default function Home(props) {
             tags={["Next.js", "i18n", "HTML/CSS"]}
             title={t("portfolio5_title")}
             description={t("portfolio5_desc")}
+            more={t("more")}
+          />
+          <PortfolioItem
+            id={8}
+            img={portfolio8}
+            tags={["React", "JS", "HTML/CSS"]}
+            title={t("portfolio8_title")}
+            description={t("portfolio8_desc")}
             more={t("more")}
           />
 
