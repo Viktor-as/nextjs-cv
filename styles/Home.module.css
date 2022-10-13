@@ -229,15 +229,16 @@
 .link {
     color: rgb(69, 131, 201);
     font-weight: 600;
+    overflow-wrap: break-word;
 }
 
 .link:hover {
     color: rgb(55, 103, 158);
 }
 
-.justify {
+/* .justify {
     text-align: justify;
-}
+} */
 
 .center {
     text-align: center;
@@ -264,8 +265,8 @@
         width: 80vw;
     }
     .homeImgContainer {
-        width: 50vw;
-        height: 50vw;
+        width: 70vw;
+        height: 70vw;
     }
     .portfolioItemsContainer {
         display: flex;
@@ -276,9 +277,17 @@
     }
     .experience {
        width: 100vw;
+       padding: 10vh 0vw;
     }
     .timeline {
-        width: 80vw;
+        width: 90vw;
+        padding: 10vh 4vw 10vh 8vw;
+    }
+    .event::after {
+        
+        left: -35px;
+        
+        
     }
     .about {
         width: 100vw;

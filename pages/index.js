@@ -33,7 +33,7 @@ export default function Home(props) {
         </div>
         <h1>{t("welcome_msg")}</h1>
         <p className={styles.homeDescription}>{t("intro1")}</p>
-        <p>{t("intro2")}</p>
+        <p className={styles.homeDescription}>{t("intro2")}</p>
         <a href="#portfolio">
           <i className={[styles.arrow, styles.down].join(" ")}></i>
         </a>
