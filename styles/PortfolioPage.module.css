@@ -1,0 +1,104 @@
+/*-----------------------Project page START-----------------------*/
+
+.project-container {
+    display: flex;
+    width: 79vw;
+    padding: 10vh 7vw;
+    gap: 50px;
+}
+
+.project-info {
+    width: 50%;
+}
+
+.project-photo {
+    width: 50%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+
+}
+
+.project-img{
+  /* width: 400px; */
+  object-fit: contain;
+}
+
+.back-button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.github-link a{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.project-listas > li{
+    list-style: inside!important;
+    list-style-type: disc!important;
+    padding-left: 30px;
+}
+/*-----------------------Project page END-----------------------*/
+
+.tags {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: black;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .spacer {
+    padding-top: 50px;
+}
+
+.mt10 {
+    margin-top: 10px!important;
+}
+.mt20 {
+    margin-top: 20px!important;
+}
+
+.link {
+    color: rgb(69, 131, 201);
+    font-weight: 600;
+}
+
+.link:hover {
+    color: rgb(55, 103, 158);
+}
+.contact-svg {
+    margin-right: 10px;
+}
+
+.list-head {
+    font-weight: 600;
+}

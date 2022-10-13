@@ -1,20 +1,23 @@
 import "../styles/globals.css";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Head from "next/head";
+import Meta from "../components/Meta";
 import { appWithTranslation } from "next-i18next";
+import MobileNav from "../components/MobileNav";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Viktoras Šimkevičius CV</title>
-        <meta name="description" content="Viktoras Šimkevičius CV" />
-        <link rel="icon" href="/favi2.png" />
-      </Head>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <Meta />
+      <MobileNav />
+      <div className="desktopBody">
+        <div className="desktopNavigation">
+          <Header />
+        </div>
+        <div className="navSpacer"></div>
+        <div className="content">
+          <Component {...pageProps} />
+        </div>
+      </div>
     </>
   );
 }
