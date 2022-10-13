@@ -266,7 +266,7 @@ export default function Home(props) {
             <a
               href="https://www.linkedin.com/in/viktoras-%C5%A1imkevi%C4%8Dius-7693a944/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <Image
                 src={linkedinIcon}
@@ -279,7 +279,7 @@ export default function Home(props) {
             <a
               href="https://github.com/Viktor-as"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <Image
                 src={githubIcon}
