@@ -55,7 +55,7 @@ export default function PortfilioPage(props) {
             <div className={styles["spacer"]}></div>
             {props.projectFilesLink && (
               <div className={styles["github-link"]}>
-                <a href={props.projectFilesLink} target="_blank">
+                <a href={props.projectFilesLink} target="_blank" rel="noopener">
                   <div className={styles["contact-svg"]}>
                     <Image src={GithubImg} width={30} height={30} />
                   </div>
@@ -65,7 +65,7 @@ export default function PortfilioPage(props) {
             )}
             {props.projectLiveLink && (
               <div className={styles["github-link"]}>
-                <a href={props.projectLiveLink} target="_blank">
+                <a href={props.projectLiveLink} target="_blank" rel="noopener">
                   <div className={styles["contact-svg"]}>
                     <Image src={LiveImg} width={30} height={30} />
                   </div>
