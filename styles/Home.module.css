@@ -255,3 +255,38 @@
     margin-top: 10px!important;
 }
 /*-----------------------General END-----------------------*/
+
+/*-----------------------Response START-----------------------*/
+
+@media only screen and (max-width: 900px) {
+   
+    .homeDescription {
+        width: 80vw;
+    }
+    .homeImgContainer {
+        width: 50vw;
+        height: 50vw;
+    }
+    .portfolioItemsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolioImg{
+        width: 80vw;
+    }
+    .experience {
+       width: 100vw;
+    }
+    .timeline {
+        width: 80vw;
+    }
+    .about {
+        width: 100vw;
+    }
+    .aboutInfo {
+        width: 80vw;
+    }
+    .contacts {
+        width: 100vw;
+    }
+}
