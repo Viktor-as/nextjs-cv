@@ -5,23 +5,25 @@
     flex-direction: column;
     align-items: center;
     flex-grow: 8;
-    height: 100vh;
+    height: clamp(700px, 100vh, 100vh);
     justify-content: center;
     gap: 15px;
     background-color: #f9f9fb;
+    padding: 50px 20px;
 }
 
 .homeDescription {
-    width: 40vw; 
+    padding: 0 20px; 
     text-align: center;
 }
 
 .homeImgContainer{
     position: relative;
-    width: 20vw;
-    height: 20vw;
+    width: clamp(350px, 20vw, 20vw);
+    height: clamp(350px, 20vw, 20vw);
     border: #e6e6e6 solid 10px;
     border-radius: 100%;
+    padding: 40px;
 }
 
 .homeImg {
@@ -97,7 +99,7 @@
     width: 50vw;
 }
 
-.event {
+.event, .education {
     border-bottom: 1px dashed rgba(85, 85, 85, 0.205);
     padding-bottom: 25px;
     margin-bottom: 25px;
@@ -106,7 +108,7 @@
     /* overflow: hidden; */
 }
 
-.event::after {
+.event::after,.education::after {
     -webkit-box-shadow: 0 0 0 4px black;
     box-shadow: 0 0 0 4px black;
     left: -57px;
@@ -122,7 +124,7 @@
     
 }
 
-.event:last-of-type {
+.event:last-of-type, .education:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
@@ -265,8 +267,8 @@
         width: 80vw;
     }
     .homeImgContainer {
-        width: 70vw;
-        height: 70vw;
+        width: 350px;
+        height: 350px;
     }
     .portfolioItemsContainer {
         display: flex;
@@ -284,10 +286,10 @@
         padding: 10vh 4vw 10vh 8vw;
     }
     .event::after {
-        
-        left: -35px;
-        
-        
+        left: -11.4%; 
+    }
+    .education::after {
+        left: -13.1%; 
     }
     .about {
         width: 100vw;
@@ -297,5 +299,45 @@
     }
     .contacts {
         width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .event::after {
+        left: -11.8%; 
+    }
+    .education::after {
+        left: -13.7%; 
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .event::after {
+        left: -12.1%; 
+    }
+    .education::after {
+        left: -14.3%; 
+    }
+    .homeImgContainer {
+        width: 70vw;
+        height: 70vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .event::after {
+        left: -12.7%; 
+    }
+    .education::after {
+        left: -14.8%; 
+    }    
+}
+
+@media only screen and (max-width: 300px) {
+    .event::after {
+        left: -13.2%; 
+    }
+    .education::after {
+        left: -15.8%; 
     }
 }

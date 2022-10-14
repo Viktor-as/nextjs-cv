@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
         <div className="desktopNavigation">
           <Header />
         </div>
-        <div className="navSpacer"></div>
         <div className="content">
           <Component {...pageProps} />
         </div>

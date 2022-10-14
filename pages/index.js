@@ -228,7 +228,7 @@ export default function Home(props) {
           <h3 className={styles.spacer}>{t("education")}</h3>
           <ul className={[styles.timeline, styles.mt20].join(" ")}>
             {/* timeline item */}
-            <li className={styles.event}>
+            <li className={styles.education}>
               <h4>{t("degree")}</h4>
               <h5>
                 <span className={styles.date}>2010.09 – 2014.06</span>
@@ -237,7 +237,7 @@ export default function Home(props) {
             </li>
 
             {/* timeline item */}
-            <li className={styles.event}>
+            <li className={styles.education}>
               <h4>{t("school_degree")}</h4>
               <h5>
                 <span className={styles.date}>2006.09 – 2010.06</span>

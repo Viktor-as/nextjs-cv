@@ -9,7 +9,7 @@
   border-bottom: 1px solid #cbd3d9;
   border-top: 1px solid #cbd3d9;
   flex-grow: 8;
-  padding: 20px 40px;
+  padding: 40px 40px;
 }
 
 .navBottom {
@@ -17,15 +17,13 @@
   padding: 20px 40px;
 }
 
-.meniu {
-  padding-top: 5vh;
-  /* list-style-type: none; */
-  /* padding-left: 30px; */
-}
+/* .meniu {
+
+} */
 
 .meniu > li  {
   display: flex;
-  padding: 5px 10px 5px 20px;
+  padding: 5px 10px 5px 0px;
   margin: 10px 0;
   color: black;
 }
@@ -53,6 +51,7 @@ background-color: #f0f0f0;
 .navContacts {
   font-size: 14px;
   color: #707070;
+  word-wrap: break-word;
 }
 
 .languageContainer{
