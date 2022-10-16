@@ -212,6 +212,9 @@ export default function Home(props) {
           <div className={styles.tags}>
             <p className={styles.tag}>Next.js</p>
             <p className={styles.tag}>React</p>
+            <p className={styles.tag}>Typescript</p>
+            <p className={styles.tag}>MongoDB</p>
+            <p className={styles.tag}>Jest</p>
             <p className={styles.tag}>JS</p>
             <p className={styles.tag}>GIT</p>
             <p className={styles.tag}>PHP</p>
