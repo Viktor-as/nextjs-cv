@@ -31,7 +31,7 @@ export default function Home(props) {
             priority
           />
         </div>
-        <h1>{t("welcome_msg")}</h1>
+        <h1 className={styles.welcome}>{t("welcome_msg")}</h1>
         <p className={styles.homeDescription}>{t("intro1")}</p>
         <p className={styles.homeDescription}>{t("intro2")}</p>
         <a href="#portfolio">
@@ -103,6 +103,28 @@ export default function Home(props) {
             description={t("portfolio4_desc")}
             more={t("more")}
           />
+        </div>
+      </section>
+      <section className={styles.skillsSection} id="skills">
+        <h1 className={styles.spacer}>{t("programming_skills")}</h1>
+        <div className={styles.tags}>
+          <p className={styles.tag}>Next.js</p>
+          <p className={styles.tag}>React</p>
+          <p className={styles.tag}>Redux</p>
+          <p className={styles.tag}>JavaScript</p>
+          <p className={styles.tag}>Typescript</p>
+          <p className={styles.tag}>Node.js</p>
+          <p className={styles.tag}>Express</p>
+          <p className={styles.tag}>MongoDB</p>
+          <p className={styles.tag}>Jest</p>
+          <p className={styles.tag}>GIT</p>
+          <p className={styles.tag}>PHP</p>
+          <p className={styles.tag}>MYSQL</p>
+          <p className={styles.tag}>HTML</p>
+          <p className={styles.tag}>SASS</p>
+          <p className={styles.tag}>CSS</p>
+          <p className={styles.tag}>Tailwind</p>
+          <p className={styles.tag}>Adobe suite</p>
         </div>
       </section>
       <section className={styles.experience} id="experience">
@@ -206,28 +228,6 @@ export default function Home(props) {
       <section className={styles.about} id="about">
         <h1>{t("about_title")}</h1>
         <div className={styles.aboutInfo}>
-          <h3>{t("about_intro")}</h3>
-          <p className={styles.justify}>{t("about_desc")}</p>
-          <h3 className={styles.spacer}>{t("programming_skills")}</h3>
-          <div className={styles.tags}>
-            <p className={styles.tag}>Next.js</p>
-            <p className={styles.tag}>React</p>
-            <p className={styles.tag}>Typescript</p>
-            <p className={styles.tag}>MongoDB</p>
-            <p className={styles.tag}>Jest</p>
-            <p className={styles.tag}>JS</p>
-            <p className={styles.tag}>GIT</p>
-            <p className={styles.tag}>PHP</p>
-            <p className={styles.tag}>MYSQL</p>
-            <p className={styles.tag}>HTML</p>
-            <p className={styles.tag}>CSS</p>
-          </div>
-          <h3 className={styles.spacer}>{t("design_skills")}</h3>
-          <div className={styles.tags}>
-            <p className={styles.tag}>PHOTOSHOP</p>
-            <p className={styles.tag}>ILLUSTRATOR</p>
-            <p className={styles.tag}>PREMIERE PRO</p>
-          </div>
           <h3 className={styles.spacer}>{t("education")}</h3>
           <ul className={[styles.timeline, styles.mt20].join(" ")}>
             {/* timeline item */}

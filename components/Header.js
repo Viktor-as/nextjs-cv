@@ -6,6 +6,7 @@ import portfolioIcon from "../img/svg/portfolio.svg";
 import experienceIcon from "../img/svg/experience.svg";
 import aboutIcon from "../img/svg/human.svg";
 import contactIcon from "../img/svg/contact.svg";
+import skillsIcon from "../img/svg/skills.svg";
 import Link from "next/link";
 import ltFlag from "../img/flags/lt.jpg";
 import enFlag from "../img/flags/en.jpg";
@@ -44,48 +45,55 @@ export default function Header(props) {
       </div>
       <div className={styles.meniuContainer}>
         <ul className={styles.meniu}>
-          <li>
-            <Link href="/#home">
-              <a>
-                <div className={styles.svg}>
-                  <Image src={homeIcon} />
-                </div>
+          <Link href="/#home">
+            <a>
+              <li>
+                <Image src={homeIcon} className={styles.svg} />
                 <span>{t.home}</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#portfolio">
-              <a>
+              </li>
+            </a>
+          </Link>
+
+          <Link href="/#portfolio">
+            <a>
+              <li>
                 <Image className={styles.svg} src={portfolioIcon} />
                 <span>{t.portfolio}</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#experience">
-              <a>
+              </li>
+            </a>
+          </Link>
+          <Link href="/#skills">
+            <a>
+              <li>
+                <Image className={styles.svg} src={skillsIcon} />
+                <span>{t.skills}</span>
+              </li>
+            </a>
+          </Link>
+          <Link href="/#experience">
+            <a>
+              <li>
                 <Image className={styles.svg} src={experienceIcon} />
                 <span>{t.experience}</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#about">
-              <a>
+              </li>
+            </a>
+          </Link>
+          <Link href="/#about">
+            <a>
+              <li>
                 <Image className={styles.svg} src={aboutIcon} />
                 <span>{t.about_me}</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/#contact">
-              <a>
+              </li>
+            </a>
+          </Link>
+          <Link href="/#contact">
+            <a>
+              <li>
                 <Image className={styles.svg} src={contactIcon} />
                 <span>{t.contacts}</span>
-              </a>
-            </Link>
-          </li>
+              </li>
+            </a>
+          </Link>
         </ul>
       </div>
       <div className={styles.navBottom}>
