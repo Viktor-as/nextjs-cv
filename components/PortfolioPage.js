@@ -29,17 +29,33 @@ export default function PortfilioPage(props) {
                   </p>
                 );
               })}
-            {props.listItems && (
-              <p className={styles["mt10"] + " " + styles["list-head"]}>
-                {props.challenges_faced}
-              </p>
+            {/* Functionality list */}
+            {props.functionality_list && (
+              <>
+                <p className={styles["mt10"] + " " + styles["list-head"]}>
+                  {props.functionality_list_title}
+                </p>
+                <ul className={styles["project-listas"]}>
+                  {props.functionality_list.map((ele, index) => {
+                    return <li key={index}>{ele}</li>;
+                  })}
+                </ul>
+              </>
             )}
-            <ul className={styles["project-listas"]}>
-              {props.listItems &&
-                props.listItems.map((ele, index) => {
-                  return <li key={index}>{ele}</li>;
-                })}
-            </ul>
+            {/* Chalanges list */}
+            {props.challengesListItems && (
+              <>
+                <p className={styles["mt10"] + " " + styles["list-head"]}>
+                  {props.challenges_faced}
+                </p>
+                <ul className={styles["project-listas"]}>
+                  {props.challengesListItems.map((ele, index) => {
+                    return <li key={index}>{ele}</li>;
+                  })}
+                </ul>
+              </>
+            )}
+            {/* Technologies used list */}
             <h3 className={styles["spacer"]}>{props.languages_used}</h3>
             <div className={styles["tags"]}>
               {props.tags &&
@@ -88,6 +104,10 @@ export default function PortfilioPage(props) {
             src={`/img/portfolio/portfolio_full_${props.id}.jpg`}
             layout="fill"
           />
+          {/* coming soon badge */}
+          {props.coming_soon && (
+            <p className={styles.comingSoon}>{props.coming_soon}</p>
+          )}
         </div>
       </section>
     </>

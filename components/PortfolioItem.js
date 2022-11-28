@@ -16,7 +16,10 @@ export default function PortfolioItem(props) {
             objectFit="cover"
           />
         </div>
-        {/* <p className={styles.comingSoon}>coming soon</p> */}
+        {/* coming soon badge */}
+        {props.comingSoon && (
+          <p className={styles.comingSoon}>{props.comingSoonText}</p>
+        )}
         <div className={styles.tags}>
           {props.tags &&
             props.tags.map((tag, index) => {
@@ -29,7 +32,6 @@ export default function PortfolioItem(props) {
         </div>
         <h3>{props.title}</h3>
         <p className={styles.portfolioShortDescription}>{props.description}</p>
-
         <button
           className={styles.portfolioMore}
           type="button"

@@ -3,6 +3,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import webDevImg from "../img/web-dev.jpg";
+import portfolio9 from "../img/portfolio/portfolio9.jpg";
 import portfolio8 from "../img/portfolio/portfolio8.jpg";
 import portfolio7 from "../img/portfolio/portfolio7.jpg";
 import portfolio6 from "../img/portfolio/portfolio6.jpg";
@@ -42,6 +43,24 @@ export default function Home(props) {
         <h1>{t("portfolio")}</h1>
         <div className={styles.portfolioItemsContainer}>
           <PortfolioItem
+            id={9}
+            img={portfolio9}
+            tags={[
+              "React",
+              "JS",
+              "Node.js",
+              "Express",
+              "JWT",
+              "Material UI",
+              "MongoDB",
+            ]}
+            title={t("portfolio9_title")}
+            description={t("portfolio9_desc")}
+            more={t("more")}
+            comingSoon={true}
+            comingSoonText={t("coming_soon")}
+          />
+          <PortfolioItem
             id={7}
             img={portfolio7}
             tags={["React", "JS", "HTML/CSS"]}
@@ -65,28 +84,14 @@ export default function Home(props) {
             description={t("portfolio8_desc")}
             more={t("more")}
           />
-
-          {/* <div className={styles.portfolioItem}>
-                <Image className={styles.portfolioImg} src={portfolio1} alt="">
-                <div className={styles.tags}>
-                    <p className={styles.tag}>Angular</p>
-                    <p className={styles.tag}>JS</p>
-                    <p className={styles.tag}>HTML / CSS</p>
-                </div>
-                <h3>Darbų registravimo sistema.</h3>
-                <p className={styles.portfolioShortDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <div className={styles.portfolioMore}>
-                    <p >Plačiau...</p>
-                </div>
-            </div> */}
-          <PortfolioItem
+          {/* <PortfolioItem
             id={2}
             img={portfolio2}
             tags={["JS", "HTML/CSS"]}
             title={t("portfolio2_title")}
             description={t("portfolio2_desc")}
             more={t("more")}
-          />
+          /> */}
           <PortfolioItem
             id={3}
             img={portfolio3}
@@ -118,12 +123,15 @@ export default function Home(props) {
           <p className={styles.tag}>MongoDB</p>
           <p className={styles.tag}>Jest</p>
           <p className={styles.tag}>GIT</p>
+          <p className={styles.tag}>Docker</p>
           <p className={styles.tag}>PHP</p>
           <p className={styles.tag}>MYSQL</p>
           <p className={styles.tag}>HTML</p>
           <p className={styles.tag}>SASS</p>
           <p className={styles.tag}>CSS</p>
           <p className={styles.tag}>Tailwind</p>
+          <p className={styles.tag}>Material UI v5</p>
+          <p className={styles.tag}>Formik</p>
           <p className={styles.tag}>Adobe suite</p>
         </div>
       </section>

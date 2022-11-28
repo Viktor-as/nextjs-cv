@@ -12,7 +12,7 @@ export default function Page7(props) {
         id={7}
         title={t("project7:title")}
         description={[t("project7:description1"), t("project7:description2")]}
-        listItems={[
+        challengesListItems={[
           t("project7:list_item1"),
           t("project7:list_item2"),
           t("project7:list_item3"),

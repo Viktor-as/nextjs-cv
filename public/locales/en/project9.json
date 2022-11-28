@@ -1,0 +1,11 @@
+{
+  "description1": "This MERN stack app is designed for teams to create tasks, assign them to team members, and see their status.",
+  "description2": "The idea came from a similar project we did during the “JavaScript from Scratch” course using “Angular” framework, in a group with two other students as our final project. Only this time, the app is built with “React” framework and has more functionality.",
+  "functionality_list1": "Full stack - the application has a front-end part, a server and a connected “MongoDB” database.",
+  "functionality_list2": "Authentication - only team members with login data can access the system. After entering login data, a request is sent to the server and if the user exists, a \"JWT token\" is generated for him, which is used for further identification and authorization of the user in the application.",
+  "functionality_list3": "Tasks - users can create and view tasks assigned to them, update the completion status.",
+  "functionality_list4": "Users - in the application you can see the list of users, add new users, edit your profile data.",
+  "functionality_list5": "Design - used Material UI v5 library to create professional design. The app can choose between a light or dark design mode.",
+  "functionality_list_title": "Functionality and technologies:",
+  "title": "Team Task Management System"
+}
