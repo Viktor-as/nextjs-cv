@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 8;
-  height: clamp(700px, 100vh, 100vh);
+  min-height: max(700px, 100vh);
   justify-content: center;
   gap: 15px;
   background-color: #f9f9fb;
@@ -24,6 +24,7 @@
   /* border: #e6e6e6 solid 10px; */
   border-radius: 100%;
   padding: 40px;
+  margin-top: 50px;
 }
 
 .homeImgContainer::before {
@@ -40,11 +41,11 @@
 .homeImgContainer::before {
   content: "";
   position: absolute;
-  width: 370px;
-  height: 370px;
+  /* width: 370px;
+  height: 370px; */
   background-color: #e6e6e6;
-  top: -10px;
-  left: -10px;
+  /* top: -10px;
+  left: -10px; */
   border-radius: 100%;
 }
 
@@ -372,6 +373,12 @@
   .homeImgContainer {
     width: 70vw;
     height: 70vw;
+  }
+  .homeImgContainer::before {
+    width: 74vw;
+    height: 74vw;
+    top: -3%;
+    left: -3%;
   }
 }
 

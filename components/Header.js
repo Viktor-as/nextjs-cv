@@ -101,7 +101,11 @@ export default function Header(props) {
           <b>Viktoras Šimkevičius</b>
         </p>
         <a href="mailto:simkevicius.viktoras@gmail.com">
-          <p className={styles.navContacts}>simkevicius.viktoras@gmail.com</p>
+          <p className={styles.navContacts}>
+            simkevicius.viktoras
+            <br />
+            @gmail.com
+          </p>
         </a>
         <a href="tel:+37062469512">
           <p className={styles.navContacts}>+370 624 69512</p>

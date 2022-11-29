@@ -7,6 +7,7 @@ import portfolioIcon from "../img/svg/portfolio.svg";
 import experienceIcon from "../img/svg/experience.svg";
 import aboutIcon from "../img/svg/human.svg";
 import contactIcon from "../img/svg/contact.svg";
+import skillsIcon from "../img/svg/skills.svg";
 import { useRouter } from "next/router";
 import enTranslations from "../public/locales/en/header.json";
 import ltTranslations from "../public/locales/lt/header.json";
@@ -74,6 +75,14 @@ export default function Header(props) {
                 <a onClick={unCheck}>
                   <Image className={styles.svg} src={portfolioIcon} />
                   <p>{t.portfolio}</p>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#skills">
+                <a onClick={unCheck}>
+                  <Image className={styles.svg} src={skillsIcon} />
+                  <p>{t.skills}</p>
                 </a>
               </Link>
             </li>
