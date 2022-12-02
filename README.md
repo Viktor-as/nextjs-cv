@@ -5,5 +5,4 @@
 This is a CV website using Next.js framework.
 Also used next-i18next to translate the website.
 
-Live preview: https://viktoras.info/
 #### <a href="https://viktoras.info/">Click here for live demo</a>
