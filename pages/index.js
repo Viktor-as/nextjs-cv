@@ -57,8 +57,8 @@ export default function Home(props) {
             title={t("portfolio9_title")}
             description={t("portfolio9_desc")}
             more={t("more")}
-            comingSoon={true}
-            comingSoonText={t("coming_soon")}
+            // comingSoon={true}
+            // comingSoonText={t("coming_soon")}
           />
           <PortfolioItem
             id={7}

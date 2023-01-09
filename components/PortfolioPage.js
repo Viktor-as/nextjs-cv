@@ -94,6 +94,9 @@ export default function PortfilioPage(props) {
                   </div>
                   <p className={styles["link"]}>{props.project_review}</p>
                 </a>
+                {props.website_loading_note && (
+                  <p className={styles["note"]}>{props.website_loading_note}</p>
+                )}
               </div>
             )}
           </div>

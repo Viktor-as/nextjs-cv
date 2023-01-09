@@ -31,7 +31,12 @@ export default function Page9(props) {
           t("project9:functionality_list4"),
           t("project9:functionality_list5"),
         ]}
-        coming_soon={t("common:coming_soon")}
+        // coming_soon={t("common:coming_soon")}
+        projectFilesLink="https://github.com/Viktor-as/MERN-auth"
+        projectLiveLink="https://mern-test-app2.onrender.com/"
+        project_files={t("common:project_files")}
+        project_review={t("common:project_review")}
+        website_loading_note={t("common:website_loading_note")}
       />
     </>
   );

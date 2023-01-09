@@ -55,6 +55,10 @@
   list-style-type: disc !important;
   padding-left: 30px;
 }
+
+.note {
+  font-size: 13px;
+}
 /*-----------------------Project page END-----------------------*/
 
 .tags {
